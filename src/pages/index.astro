@@ -3,6 +3,8 @@ import Base from '../layouts/Base.astro';
 import ScrollSection from '../components/ScrollSection.svelte';
 import Timeline from '../components/Timeline.svelte';
 import CensusChart from '../components/CensusChart.svelte';
+
+const base = import.meta.env.BASE_URL;
 ---
 
 <Base title="Saga Seglbúða í Landbroti">
@@ -59,7 +61,7 @@ import CensusChart from '../components/CensusChart.svelte';
 
     <ScrollSection width="wide" client:visible>
       <figure class="figure figure-historical">
-        <img src="/kort/gunnlaugsson-1844-landbrot.jpg"
+        <img src={`${base}kort/gunnlaugsson-1844-landbrot.jpg`}
              alt="Björn Gunnlaugsson kort af Landbroti, 1844"
              loading="lazy" />
         <figcaption class="figure-caption">
@@ -131,7 +133,7 @@ import CensusChart from '../components/CensusChart.svelte';
 
     <ScrollSection width="wide" client:visible>
       <figure class="figure figure-historical">
-        <img src="/facsimiles/diplomatarium-1343.png"
+        <img src={`${base}facsimiles/diplomatarium-1343.png`}
              alt="Diplomatarium Islandicum II, bls. 781 -- máldagi Kirkjubæjarklausturs 1343"
              loading="lazy" />
         <figcaption class="figure-caption">
@@ -380,7 +382,7 @@ import CensusChart from '../components/CensusChart.svelte';
 
     <ScrollSection width="wide" client:visible>
       <figure class="figure figure-historical">
-        <img src="/kort/seglbudir-1844-detail.png"
+        <img src={`${base}kort/seglbudir-1844-detail.png`}
              alt="Seglbúðir á Gunnlaugsson korti 1844 -- stækkað"
              loading="lazy" />
         <figcaption class="figure-caption">
