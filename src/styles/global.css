@@ -335,6 +335,151 @@ tr:last-child td {
   margin: 4rem auto;
 }
 
+/* Name evolution */
+.name-evolution {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2.5rem auto;
+  padding: 2rem 1.5rem;
+  max-width: 520px;
+}
+
+.name-stage {
+  text-align: center;
+  flex: 1;
+}
+
+.name-year {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 0.75rem;
+  color: var(--color-fire);
+  letter-spacing: 0.04em;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.name-form {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: var(--color-lava);
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.name-meaning {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  color: var(--color-text-secondary);
+  display: block;
+}
+
+.name-arrow {
+  font-size: 1.5rem;
+  color: var(--color-border);
+  flex-shrink: 0;
+  margin-top: 0.8rem;
+}
+
+/* Portrait section */
+.portrait-section {
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.portrait {
+  flex-shrink: 0;
+  width: 200px;
+  margin: 0;
+}
+
+.portrait img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  filter: contrast(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+}
+
+.portrait figcaption {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  color: var(--color-text-secondary);
+  margin-top: 0.5rem;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.portrait-text {
+  flex: 1;
+}
+
+.portrait-text p {
+  margin-bottom: 1rem;
+}
+
+.compact-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+.compact-table td {
+  padding: 0.4rem 0.75rem;
+  border-bottom: 1px solid var(--color-border);
+  vertical-align: top;
+}
+
+.compact-table td:first-child {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  white-space: nowrap;
+  width: 110px;
+  color: var(--color-text-secondary);
+}
+
+.compact-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Map year badge */
+.map-year-badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: rgba(26, 26, 26, 0.85);
+  color: #f5f0e8;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 3px;
+  letter-spacing: 0.05em;
+  z-index: 2;
+}
+
+.figure {
+  position: relative;
+}
+
+/* Timeline intro */
+.timeline-intro {
+  text-align: center;
+  max-width: 540px;
+  margin: 0 auto 2rem;
+  font-style: italic;
+  color: var(--color-text-secondary);
+  font-size: 0.95rem;
+}
+
 /* Footer */
 .site-footer {
   text-align: center;
@@ -375,6 +520,30 @@ tr:last-child td {
 
   :root {
     --section-gap: 5rem;
+  }
+
+  .name-evolution {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .name-arrow {
+    transform: rotate(90deg);
+    margin-top: 0;
+  }
+
+  .portrait-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .portrait {
+    width: 160px;
+  }
+
+  .compact-table td:first-child {
+    width: auto;
   }
 }
 
