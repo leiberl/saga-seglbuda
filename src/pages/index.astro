@@ -1,0 +1,420 @@
+---
+import Base from '../layouts/Base.astro';
+import ScrollSection from '../components/ScrollSection.svelte';
+import Timeline from '../components/Timeline.svelte';
+import CensusChart from '../components/CensusChart.svelte';
+---
+
+<Base title="Saga Seglbúða í Landbroti">
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- HERO                                        -->
+  <!-- ═══════════════════════════════════════════ -->
+  <header class="hero">
+    <h1>Saga Seglbúða</h1>
+    <div class="hero-divider"></div>
+    <p class="hero-subtitle">
+      Bær í Landbroti, á hraunbrún Eldgjár, þar sem eldur skapaði landið,
+      vatn gaf líf, og ein fjölskylda stóð í stað í sjö aldir.
+    </p>
+    <p class="hero-meta">63,727°N &nbsp;·&nbsp; 17,946°V &nbsp;·&nbsp; Skaftárhreppur</p>
+  </header>
+
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- ACT I: LANDIÐ                               -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="act" id="land">
+    <ScrollSection client:visible>
+      <div class="act-header">
+        <span class="act-number">I. þáttur</span>
+        <h2 class="act-title">Landið</h2>
+        <p class="act-subtitle">Eldur, hraun og vatn</p>
+      </div>
+    </ScrollSection>
+
+    <ScrollSection client:visible>
+      <p>
+        Seglbúðir stendur á hraunbrún Eldgjárhrauns, á jaðri þess fornu hraunflæðis sem rann
+        úr Eldgjá um 934 og skapaði landið sem byggt var á. Bærinn er einn af 19 jörðum
+        Landbrots -- héraðs í Vestur-Skaftafellssýslu, á milli Skaftár og Eldhrauns.
+      </p>
+    </ScrollSection>
+
+    <ScrollSection client:visible>
+      <h3>Þrjú hraun</h3>
+      <p>
+        Jón Jónsson jarðfræðingur (1910--2005), fæddur á Kársstöðum í Landbroti, greindi
+        frá þremur hraunlögum í grein sinni „Þankabrot um Landbrot" (1995):
+      </p>
+      <ol>
+        <li><strong>Eldra undirlagshraun</strong> -- hugsanlega yfir 6.000 ára.</li>
+        <li><strong>Eldgjárhraun (934±2 e.Kr.)</strong> -- hraunið sem bæirnir standa á.</li>
+        <li><strong>Skaftáreldahraun (1783)</strong> -- Lakagígahraun sem lagði undir sig hluta Landbrotsins.</li>
+      </ol>
+      <p>
+        Tvær borholur á landi Seglbúða (SB-01 og SB-02) mældu hraunþykkt 20--22 metra.
+      </p>
+    </ScrollSection>
+
+    <ScrollSection width="wide" client:visible>
+      <figure class="figure figure-historical">
+        <img src="/kort/gunnlaugsson-1844-landbrot.jpg"
+             alt="Björn Gunnlaugsson kort af Landbroti, 1844"
+             loading="lazy" />
+        <figcaption class="figure-caption">
+          Landbrot á Uppdráttur Íslands eftir Björn Gunnlaugsson (1844, 1:480.000).
+          Seglbúðir kemur fram sem bæjardottur á hraunbrúninni.
+        </figcaption>
+      </figure>
+    </ScrollSection>
+
+    <ScrollSection client:visible>
+      <h3>Landbrotshólar</h3>
+      <p>
+        Þegar Eldgjáhraunið rann yfir votlendi um 934 mynduðust <strong>Landbrotshólar</strong> --
+        stærsta gervigígasvæði Íslands (~50 km², yfir 4.000 gervigígar). Gervigígarnir urðu til
+        þegar 1.100°C hraun mætti grunnvatni og gufusprengingar breytti yfirborðinu í holu keilu.
+        Þessir hólar eru megineinkenni landslagsins við Seglbúðir; sumir voru á sögulegum tíma
+        notaðir sem skjól fyrir búfé.
+      </p>
+    </ScrollSection>
+
+    <ScrollSection client:visible>
+      <h3>Grenlækur</h3>
+      <p>
+        Grenlækur er um 30 km langur lindarlækur. Vatnið seytlar gegnum Eldgjáhraun og
+        Skaftáreldahraun og kemur fram sem lindavatn. Í læknum veiðist sjóbirtingur, bleikja
+        og stundum lax. Seglbúðasvæðið er 10 km langt með um 40 veiðilykkjur.
+      </p>
+      <p>
+        <strong>Tröllshylur</strong> (örnefni nr. 51), um 400 m frá bænum, er lýst sem
+        „gamall farvegur eftir stórfljót" -- vitni um stórt fljót sem rann á þessum stað
+        á fyrri tímum.
+      </p>
+    </ScrollSection>
+
+    <ScrollSection client:visible>
+      <h3>Jökulhlaup</h3>
+      <p>
+        Skaftá rennur gegnum Landbrot og ber jökulhlaup á um tveggja ára fresti, stundum
+        með allt að 3.500 m³/s hámarksrennsli. Jökulhlaup hafa mótað landslag Landbrotsins
+        og breytt árfarvegum í aldanna rás.
+      </p>
+    </ScrollSection>
+
+    <div class="section-divider"></div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- ACT II: NAFNIÐ                              -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="act" id="nafn">
+    <ScrollSection client:visible>
+      <div class="act-header">
+        <span class="act-number">II. þáttur</span>
+        <h2 class="act-title">Nafnið</h2>
+        <p class="act-subtitle">Selbúðir, Seglbúðir og festarhringurinn</p>
+      </div>
+    </ScrollSection>
+
+    <ScrollSection client:visible>
+      <h3>Selbúðir</h3>
+      <p>
+        Í máldaga Kirkjubæjarklausturs frá <span class="date-marker">1343</span> (DI II, bls. 781)
+        er jörðin skráð sem <strong>„selbudir"</strong> -- 298 árum eldri en næst elsta skráning
+        nafnsins. Nafnafræðilega er <em>sel-búðir</em> gagnsætt: <strong>sel</strong> (afréttarkofi)
+        + <strong>búðir</strong> (skýli), algengt íslenskt örnefnamynstur.
+      </p>
+    </ScrollSection>
+
+    <ScrollSection width="wide" client:visible>
+      <figure class="figure figure-historical">
+        <img src="/facsimiles/diplomatarium-1343.png"
+             alt="Diplomatarium Islandicum II, bls. 781 -- máldagi Kirkjubæjarklausturs 1343"
+             loading="lazy" />
+        <figcaption class="figure-caption">
+          Diplomatarium Islandicum II, bls. 781. Máldagi Kirkjubæjarklausturs frá 1343
+          þar sem „selbudir" er skráð meðal eignum klaustursins -- elsta þekkta skriflega
+          heimildin um Seglbúðir.
+        </figcaption>
+      </figure>
+    </ScrollSection>
+
+    <ScrollSection client:visible>
+      <p>
+        Árbók fornleifafélags 1923 komst að sömu niðurstöðu: „vafalaust afbökun úr upprunalega
+        nafninu Selbúðir."
+      </p>
+      <p>
+        Hljóðbreytingin <strong>l → gl</strong> (Selbúðir → Seglbúðir) er dæmi um innskotshljóð
+        sem þekkist í íslensku. Hún átti sér stað einhvern tíma milli 1343 og 1641, þegar formið
+        „Seglbúðir" birtist í visitunarskrá klaustursins.
+      </p>
+    </ScrollSection>
+
+    <ScrollSection client:visible>
+      <h3>Þjóðaráttanir</h3>
+      <p>
+        Eftir að uppruni nafnsins gleymist spretta upp nýjar skýringar. Á 20. öld birtust
+        a.m.k. þrjár kenningar:
+      </p>
+      <ul>
+        <li><strong>Skipalending</strong> (Tíminn 1957): skipgengur áll frá sjó.</li>
+        <li><strong>Fornar tjaldbyggingar</strong> (Morgunblaðið 1984): „segl" vísi til segldúks.</li>
+        <li><strong>Norsk sambærileg nöfn</strong> (Morgunblaðið 1964): „Seglheimur" á þremur stöðum í Noregi.</li>
+      </ul>
+    </ScrollSection>
+
+    <ScrollSection client:visible>
+      <h3>Festarhringurinn</h3>
+      <p>
+        Þrjár óháðar heimildir staðfesta að járnhringur var í bergi við Seglbúðir: Vísir (1941),
+        frásögn Þórarins Helgasonar (SÁM 84/63--64, 1964), og örnefnalýsingin (1975).
+        Hringurinn var við Steðja í Gili austan túnsins. Hann var fjarlægður á fyrri hluta
+        19. aldar og „notaður til smíða."
+      </p>
+      <p>
+        Hringurinn tengist ekki nafninu -- nafnið „selbudir" er 298 árum eldra og vísar til
+        selstöðu. En hann ólst inn í þjóðsögu sem „festi skipanna" og varð hluti af sögunni
+        sem íbúar sögðu sér um eigin stað. Festarhringurinn er líklega sjálfstæð fornminja
+        sem á sér eigin sögu, og nafnsagan dæmi um <strong>epiponímíu</strong>: skýring
+        spunni af fornminjum sem þegar voru til staðar.
+      </p>
+    </ScrollSection>
+
+    <div class="section-divider"></div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- ACT III: FÓLKIÐ                             -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="act" id="folk">
+    <ScrollSection client:visible>
+      <div class="act-header">
+        <span class="act-number">III. þáttur</span>
+        <h2 class="act-title">Fólkið</h2>
+        <p class="act-subtitle">Klaustrið, plágan og kynslóðirnar</p>
+      </div>
+    </ScrollSection>
+
+    <ScrollSection client:visible>
+      <h3>Klaustrið og máldaginn</h3>
+      <p>
+        Benediktínuklaustur var stofnað í Kirkjubæ <span class="date-marker">1186</span> og
+        eignaðist smám saman jarðir: um 25 árið 1397, allt að 42 við siðaskiptin 1550.
+        Í máldaga 1343 er ítarleg eignatalning klaustursins:
+      </p>
+      <blockquote>
+        „Staðir j kirkiubæ a kotnaland allt, dali, bj. morþiungu, geirland, mork, ýtrabæ,
+        heidi, tungu, uppsali, vijk, <strong>selbudir</strong>, hraun, steinsmyrar ij. flot,
+        sel, stylar, mookor."
+      </blockquote>
+    </ScrollSection>
+
+    <ScrollSection client:visible>
+      <h3>Plágan og Tólfahringur</h3>
+      <p>
+        Pestfaraldurinn barst til Íslands haustið <span class="date-marker">1402</span> og stóð
+        til páska 1404. Nálægt Landbroti, norðan við Búland, var forn sókn kölluð
+        <strong>Tólfahringur</strong> -- hringur 12 bæja sem eyðilagðist „að mestu í pláguni 1402"
+        samkvæmt ferðalýsingu Sveins Pálssonar.
+      </p>
+      <p>
+        Manntal 1703 sýnir Seglbúðir í fullri ábúð, 300 árum eftir pestina.
+      </p>
+    </ScrollSection>
+
+    <ScrollSection client:visible>
+      <h3>Skaftáreldar og Móðuharðindi</h3>
+      <p>
+        Skaftáreldar hófust <span class="date-marker">8. júní 1783</span> og stóðu í átta mánuði.
+        Í Landbroti lagði hraunið undir sig Vaðhellu. Sr. Jón Steingrímsson flutti Eldmessuna
+        20. júlí 1783 þegar hraunið var 2 km frá kirkjunni. 76 sóknarbörn hans létust á einu ári.
+      </p>
+    </ScrollSection>
+
+    <ScrollSection client:visible>
+      <div class="pull-quote">
+        „Sagt er, að Oddur, sem hér bjó eftir móðuharðindi, hafi lifað á silungi, sem þar veiddist."
+        <cite>Örnefnalýsing Seglbúða, 1975 -- um Oddsbúr (örnefni nr. 41), hylur í Grenlæk</cite>
+      </div>
+    </ScrollSection>
+
+    <ScrollSection client:visible>
+      <h3>Tapaðar heimildir</h3>
+      <p>
+        Jarðabók Árna Magnússonar og Páls Vídalíns (1702--1714) skráði allar jarðir landsins.
+        Hluti hennar um Skaftafellssýslu <strong>brann í Kaupmannahafnarbruna 20. október
+        1728</strong>. Engin afrit fundust. Færslan um Seglbúðir hefði innifalið jarðarmat,
+        nöfn ábúenda, landamerki og athugasemdir um ástand jarðarinnar.
+      </p>
+    </ScrollSection>
+
+    <ScrollSection client:visible>
+      <h3>Ábúendur og kynslóðir</h3>
+      <p>
+        Manntöl frá 1703 til 1920 veita mynd af búsetu á Seglbúðum í rúmar tvær aldir.
+      </p>
+    </ScrollSection>
+
+    <ScrollSection width="wide" client:visible>
+      <CensusChart client:visible />
+    </ScrollSection>
+
+    <ScrollSection client:visible>
+      <p>
+        <strong>Jón Órækjason (1703)</strong> er elsta þekkta fjölskyldan. Bóndi með þremur dætrum,
+        vinnuhjúum og hlutabúðarmanni -- alls 11 manns. Patronymið Órækjason er sjaldgæft.
+      </p>
+      <p>
+        <strong>Jón Jónsson (1870--1890)</strong> bjó á bænum með stórri fjölskyldu -- allt að
+        20 manns 1890, þar á meðal Steingrímur Sveinsson, 87 ára, elsti maður í manntölum Seglbúða.
+      </p>
+    </ScrollSection>
+
+    <ScrollSection client:visible>
+      <h3>Uppboðið 1887--1891</h3>
+      <p>
+        Jörðin var auglýst til sölu í Þjóðólfi, Ísafoldu og Fjallkonunni sumarið
+        <span class="date-marker">1887</span> á 1.200 kr. Verðið lækkaði í 1.050, loks 900 kr
+        árið 1891 -- merki um efnahagsþrengingar á svæðinu.
+      </p>
+    </ScrollSection>
+
+    <div class="section-divider"></div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- ACT IV: ÖLDIN                               -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="act" id="oldin">
+    <ScrollSection client:visible>
+      <div class="act-header">
+        <span class="act-number">IV. þáttur</span>
+        <h2 class="act-title">Öldin</h2>
+        <p class="act-subtitle">Tuttuguasta öldin -- frá Helga til forseta</p>
+      </div>
+    </ScrollSection>
+
+    <ScrollSection client:visible>
+      <h3>Örnefni og leiðir</h3>
+      <p>
+        Örnefnalýsing Seglbúða var skráð <span class="date-marker">1975</span> af Ara Gíslasyni
+        eftir Jóni Helgasyni bónda. Alls eru <strong>89 staðfest örnefni</strong> á landi
+        jarðarinnar, frá Markskeri í norðri til Klofakletts í Fljótsbotn.
+      </p>
+      <p>
+        Örnefnin lýsa landslagi: <strong>Gil</strong> (dalur austan túnsins),
+        <strong>Sjónarhóll</strong> (hæsti hóll, útsýnisstaður). Þau lýsa búskaparháttum:
+        <strong>Áhald</strong> (klettakrókur notaður sem fjárrétt),
+        <strong>Lambhagi</strong> (grashólmi girt klettum). Og þau varðveita minningar:
+        <strong>Oddsbúr</strong> (hylurinn þar sem Oddur lifði),
+        <strong>Steðji</strong> (staður festarhringins).
+      </p>
+    </ScrollSection>
+
+    <ScrollSection client:visible>
+      <h3>Leiðir</h3>
+      <p>
+        Jón Helgason lýsti gömlum vegum í „Gamlar götur í Landbroti" (2000). Seglbúðir stóð
+        á krossgötum: <strong>aðalleið gegnum Landbrot</strong> lá úr Meðallandi yfir Sýrlæk
+        „með stefnu í traðirnar." <strong>Leið til Þykkvabæjar</strong> lá „fram hjá gömlum
+        bæjarrústum." <strong>Skaftáróssgatanin</strong> til sjávar lá um Bakkana og Grenlæk
+        „suður á Bug."
+      </p>
+    </ScrollSection>
+
+    <ScrollSection client:visible>
+      <h3>Helgi Jónsson (1920--1949)</h3>
+      <p>
+        Helgi Jónsson (f. 1894, d. 22. maí 1949) var bóndi í 29 ár. Hann giftist Gyðríði
+        Pálsdóttur (f. 1897, d. 1994, 97 ára) frá Þykkvabæ og sat í sveitarstjórn
+        Kirkjubæjarhrepps. Helgi lést 55 ára gamall; Gyðríður hélt áfram búskap.
+      </p>
+    </ScrollSection>
+
+    <ScrollSection client:visible>
+      <h3>Jón Helgason</h3>
+      <p>
+        Jón Helgason (f. 4. október 1931) var yngstur fjögurra systkina Helga. Hann lauk
+        stúdentsprófi <span class="date-marker">1950</span> og tók strax við bænum. Hann
+        giftist Guðrúnu Þorkelsdóttur 1961.
+      </p>
+    </ScrollSection>
+
+    <ScrollSection client:visible>
+      <div class="pull-quote">
+        „Seglbúðir eru meðal glæsilegustu bændabýla á Íslandi, mikil ræktun, vel húsað og frábær snyrtimennska."
+        <cite>Tíminn, 9. ágúst 1972</cite>
+      </div>
+    </ScrollSection>
+
+    <ScrollSection client:visible>
+      <p>
+        Jón var kosinn á Alþingi 1974 fyrir Framsóknarflokk:
+      </p>
+      <table>
+        <thead>
+          <tr><th>Tímabil</th><th>Embætti</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1974--1995</td><td>Alþingismaður Suðurkjördæmis</td></tr>
+          <tr><td>1979--1983</td><td><strong>Forseti Alþingis</strong></td></tr>
+        </tbody>
+      </table>
+      <p>
+        Hann hlaut Stórskjaldarriddara Fálkaorðunnar (1981) og var allan tímann skráður
+        í Seglbúðum sem lögheimili.
+      </p>
+      <p>
+        En Jón var ekki aðeins stjórnmálamaður. Hann er aðalheimildarmaður örnefnaskrár
+        Seglbúða (1975), höfundur „Gamlar götur í Landbroti" (2000), og ritaði <em>Faðir
+        minn -- bóndinn</em> (1975) um föður sinn. Án hans hefði stór hluti þeirrar þekkingar
+        sem þessi skýrsla byggir á glatast.
+      </p>
+    </ScrollSection>
+
+    <ScrollSection width="wide" client:visible>
+      <figure class="figure figure-historical">
+        <img src="/kort/seglbudir-1844-detail.png"
+             alt="Seglbúðir á Gunnlaugsson korti 1844 -- stækkað"
+             loading="lazy" />
+        <figcaption class="figure-caption">
+          Seglbúðir á Uppdráttur Íslands eftir Björn Gunnlaugsson (1844) -- elsta kortaheimildin.
+          Bærinn sést sem dottur í Landbroti, við Grenlæk.
+        </figcaption>
+      </figure>
+    </ScrollSection>
+
+    <div class="section-divider"></div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- TIMELINE                                    -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="act" id="timalina">
+    <ScrollSection client:visible>
+      <div class="act-header">
+        <span class="act-number">Tímalína</span>
+        <h2 class="act-title">934 -- 1979</h2>
+        <p class="act-subtitle">Frá Eldgjá til forseta Alþingis</p>
+      </div>
+    </ScrollSection>
+
+    <Timeline client:visible />
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- FOOTER                                      -->
+  <!-- ═══════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <p>Sögurannsókn unnin 2026. Byggð á heimildum, manntölum, örnefnaskrám, fræðigreinum og tímaritsgreinum.</p>
+  </footer>
+
+</Base>
